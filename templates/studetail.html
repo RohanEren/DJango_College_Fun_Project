@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<!-- Page title -->
+<section class="page-title bg-primary position-relative">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="text-white font-tertiary">Student Details Page.</h1>
+            </div>
+        </div>
+    </div>
+</section>
+  
+<!-- Portfolio -->
+<section class="section">
+    <div class="container">
+        <!-- Add your portfolio content here if needed -->
+    </div>
+</section>
+
+<!-- Clients -->
+<section class="section bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="section-title">Students-Book Details page.</h2>
+            </div>
+        </div>
+        <div class="row">
+            <table class="table table-striped">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Department</th>
+                        <th scope="col">Roll Number</th>
+                        <th scope="col">Account Number</th>
+                        <th scope="col">Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for object in object_list %}
+                        <tr>
+                            <td>{{ object.name }}</td>
+                            <td>{{ object.departent }}</td>
+                            <td>{{ object.rollno }}</td>
+                            <td>{{ object.accountnumber }}</td>
+                            <td>{{ object.amount }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

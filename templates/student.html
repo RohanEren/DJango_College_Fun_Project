@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block code %}
+    <h2>This is the student page.</h2>
+
+    {% for stu in student_list %}
+        <hr>
+        <p>
+            <strong>Name:</strong> {{ stu.name }}<br>
+            <strong>Roll Number:</strong> {{ stu.rollnumber }}<br>
+            <strong>Department:</strong> {{ stu.departent }}<br>
+            <strong>Account Number:</strong> {{ stu.accountnumber }}<br>
+            <strong>Amount:</strong> {{ stu.amount }}<br>
+        </p>
+    {% endfor %}
+{% endblock %}
+
